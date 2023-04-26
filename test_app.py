@@ -52,17 +52,3 @@ def test_blocked_card(client):
     rv = client.post("/api/transaction",json=card)    
     assert  False == rv.get_json().get("approved")
     assert  "Blocked Card" in rv.get_json().get("reason")
-Footer
-© 2023 GitHub, Inc.
-Footer navigation
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
